@@ -1,6 +1,26 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "item/iron_sword/einhaender"
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "cases": [
+      {
+        "when": "einhaender",
+        "model": {
+          "type": "minecraft:model",
+          "model": "item/iron_sword/einhaender"
+        }
+      },
+      {
+        "when": "seax",
+        "model": {
+          "type": "minecraft:model",
+          "model": "item/iron_sword/seax"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/iron_sword"
+    }
   }
 }
